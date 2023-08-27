@@ -188,6 +188,10 @@ h4 {
     overflow: hidden;
 }
 
+.border--gray {
+    border: 0;
+}
+
 .bg--light {
     background-color: var(--slate-100);
 }
@@ -204,6 +208,13 @@ h4 {
 
     .ratio--1-1 {
         aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .ratio--1-1--right {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: right;
     }
 
     .flex--reverse {
@@ -214,6 +225,10 @@ h4 {
         padding-block: var(--space-2xl);
         display: grid;
         place-items: center;
+    }
+
+    .border--gray {
+        border: 5px solid var(--slate-100);
     }
 }
 
@@ -464,10 +479,19 @@ h4 {
     position: absolute;
     inset: 0;
     z-index: -1;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
     opacity: .4;
-    background-image: url(/images/image.jpg);
+    background-image: url(/images/Myoko\ -\ Akakura\ Onsen.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top center;
 }
 
 /* ------- myoko intro ------- */
