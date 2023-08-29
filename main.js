@@ -32,7 +32,7 @@ const linkAction = () => {
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=========== Active Link ===========*/
+/*=========== Active Link ===========
 document.addEventListener('DOMContentLoaded', function () {
     const links = document.querySelectorAll('nav a');
 
@@ -42,6 +42,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+*/
 
-
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll('nav a').forEach(link => {
+    if (link.href.includes(`${activePage}`)) {
+        link.classList.add('active-link');
+        console.log(link);
+    }
+})
 
