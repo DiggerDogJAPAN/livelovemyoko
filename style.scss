@@ -378,12 +378,27 @@ h4 {
         background-color: var(--slate-800);
     }
 
-    /* active link */
+    /* active link 
     .active-link {
         opacity: 1;
     }
 
     .active-link::after {
+        content: '';
+        width: 25%;
+        height: 2px;
+        background-color: var(--slate-800);
+        position: absolute;
+        left: 0;
+        bottom: -.5rem;
+    }
+    */
+
+    .nav__link[aria-current="page"] {
+        opacity: 1;
+    }
+
+    .nav__link[aria-current="page"]::after {
         content: '';
         width: 25%;
         height: 2px;
