@@ -33,26 +33,16 @@ const linkAction = () => {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=========== Active Link ===========
-document.addEventListener('DOMContentLoaded', function () {
-    const links = document.querySelectorAll('nav a');
-
-    links.forEach(link => {
-        if (link.href === window.location.href) {
-            link.classList.add('active-link');
-        }
-    });
-});
-
-
-document.querySelectorAll('nav a').forEach(link => {
-    if (link.href === window.location.href) {
-        link.classList.add('active-link');
-    }
-});
-*/
 
 document.querySelectorAll('.nav__link').forEach(link => {
     if (link.href === window.location.href) {
         link.setAttribute('aria-current', 'page')
     }
 })
+*/
+
+
+document.querySelectorAll('.nav__link').forEach
+    (link => {
+        console.log(link.href, window.location.href)
+    })
