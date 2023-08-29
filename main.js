@@ -44,11 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 */
 
-const activePage = window.location.pathname;
-const navLinks = document.querySelectorAll('nav a').forEach(link => {
-    if (link.href === (`${activePage}`)) {
+document.querySelectorAll('nav a').forEach(link => {
+    if (link.href === window.location.href) {
         link.classList.add('active-link');
-        console.log(link);
     }
-})
-
+});
