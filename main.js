@@ -32,17 +32,12 @@ const linkAction = () => {
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=========== Active Link ===========
+/*=========== Active Link ===========*/
 
 document.querySelectorAll('.nav__link').forEach(link => {
     if (link.href === window.location.href) {
         link.setAttribute('aria-current', 'page')
     }
 })
-*/
 
 
-document.querySelectorAll('.nav__link').forEach
-    (link => {
-        console.log(link.href, window.location.href)
-    })
