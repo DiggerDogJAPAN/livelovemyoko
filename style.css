@@ -264,6 +264,10 @@ h4 {
   background-color: var(--slate-50);
 }
 
+.logo {
+  width: 100px;
+}
+
 .nav {
   position: relative;
   height: var(--header-height);
@@ -368,6 +372,9 @@ h4 {
     background-color: var(--slate-50);
     display: grid;
     place-items: center;
+  }
+  .logo {
+    width: 150px;
   }
   .nav {
     height: calc(var(--header-height) + 2rem);
@@ -567,5 +574,8 @@ h4 {
   }
   .mt__right {
     width: 40%;
+  }
+  .height--full {
+    height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
