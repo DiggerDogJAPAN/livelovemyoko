@@ -609,6 +609,8 @@ h4 {
 .section-blog {
   padding-block: var(--space-2xl);
   padding-inline: var(--space-s-m);
+  width: 80rem;
+  justify-self: center;
 }
 .section-blog h2 {
   text-align: center;
