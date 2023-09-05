@@ -584,6 +584,9 @@ h4 {
   .box {
     width: 60%;
   }
+  .section-blog {
+    width: 80rem;
+  }
 }
 /* ------- Property Page ------- */
 .box {
@@ -609,7 +612,6 @@ h4 {
 .section-blog {
   padding-block: var(--space-2xl);
   padding-inline: var(--space-s-m);
-  width: 80rem;
   justify-self: center;
 }
 .section-blog h2 {
